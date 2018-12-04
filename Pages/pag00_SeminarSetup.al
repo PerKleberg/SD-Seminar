@@ -24,7 +24,7 @@ page 50100 "CSD Seminar Setup"
                     ApplicationArea = All;
 
                 }
-                field("Posted Seminar Nos."; "Posted Seminar Nos.")
+                field("Posted Seminar Reg. Nos."; "Posted Seminar Reg. Nos.")
                 {
                     ApplicationArea = All;
 

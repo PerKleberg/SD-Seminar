@@ -5,27 +5,30 @@ table 50100 "CSD Seminar Setup"
 
     fields
     {
-        field(10;"Primary Key";Code[10])
+        field(10; "Primary Key"; Code[10])
         {
-            Caption='Primary Key';            
+            Caption = 'Primary Key';
         }
 
-        field(20;"Seminar Nos.";code[20])
+        field(20; "Seminar Nos."; code[20])
         {
-            Caption='Seminar Nos.';
+            Caption = 'Seminar Nos.';
+            TableRelation = "No. Series";
         }
-        field(30;"Seminar Registration Nos.";code[20])
+        field(30; "Seminar Registration Nos."; code[20])
         {
-            Caption='Seminar Registration Nos.';
+            Caption = 'Seminar Registration Nos.';
+            TableRelation = "No. Series";
         }
-        field(40;"Posted Seminar Nos.";code[20])
+        field(40; "Posted Seminar Reg. Nos."; code[20])
         {
-            Caption='Posted Seminar Nos.';
+            Caption = 'Posted Seminar Nos.';
+            TableRelation = "No. Series";
         }
 
 
     }
-    
+
     keys
     {
         key(PK; "Primary Key")
@@ -33,25 +36,25 @@ table 50100 "CSD Seminar Setup"
             Clustered = true;
         }
     }
-    
+
     trigger OnInsert()
     begin
-        
+
     end;
-    
+
     trigger OnModify()
     begin
-        
+
     end;
-    
+
     trigger OnDelete()
     begin
-        
+
     end;
-    
+
     trigger OnRename()
     begin
-        
+
     end;
-    
+
 }
